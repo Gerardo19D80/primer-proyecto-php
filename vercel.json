@@ -1,23 +1,13 @@
 {
   "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.1"
-    },
-    "api/head.php": {
-      "runtime": "vercel-php@0.7.1"
-    },
-    "api/header.php": {
-      "runtime": "vercel-php@0.7.1"
-    },
-    "api/cards.php": {
-      "runtime": "vercel-php@0.7.1"
-    }
+    "api/index.php": { "runtime": "vercel-php@0.7.1" },
+    "api/head.php": { "runtime": "vercel-php@0.7.1" },
+    "api/header.php": { "runtime": "vercel-php@0.7.1" },
+    "api/cards.php": { "runtime": "vercel-php@0.7.1" }
   },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
-    }
+    { "src": "/(.*)", "dest": "/api/index.php" },
+    { "src": "/styles.css", "dest": "/public/styles.css" },
+    { "src": "/img/(.*)", "dest": "/public/img/$1" }
   ]
 }
-  
