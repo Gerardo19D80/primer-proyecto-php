@@ -52,3 +52,5 @@ if (isset($_GET['nombre'])) {
         <button type="submit">Inicio</button>
 </form>
 
+<?php include ('footer.php')?>
+
